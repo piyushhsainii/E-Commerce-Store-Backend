@@ -8,9 +8,8 @@ const morgan = require('morgan')
 const { config } = require('dotenv')
 const path = require('path')
 
-if(process.env.NODE_ENV !== "PRODUCTION" ){
-    config({path:'backend/config/config.env'}) 
-}
+ config({path:'config/config.env'}) 
+
 
 app.use(express.json())
 app.use(cookie())
