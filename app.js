@@ -8,7 +8,7 @@ const morgan = require('morgan')
 const { config } = require('dotenv')
 const path = require('path')
 
- config({path:'/config/config.env'}) 
+ config({path:'config/config.env'}) 
 
 
 app.use(express.json())
