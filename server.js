@@ -10,7 +10,7 @@ process.on("uncaughtException",(err)=>{
 })
 
 if(process.env.NODE_ENV !== "PRODUCTION" ){
-    config({path:'BackEnd/config/config.env'}) 
+    config({path:'backend/config/config.env'}) 
 }
 
 
