@@ -37,10 +37,14 @@ app.use('/',user)
 app.use('/',order)
 app.use('/',payment)
 
-app.use(express.static(path.join(__dirname,'../frontend/dist')))
+// app.use(express.static(path.join(__dirname,'../frontend/dist')))
 
-app.get('*',(req,res)=>{
-    res.sendFile(path.resolve(__dirname,'../frontend/dist/index.html'))
+app.get('/',(req,res)=>{
+res.send('Welcome')
 })
 
-module.exports= {app}
+// app.get('*',(req,res)=>{
+//     res.sendFile(path.resolve(__dirname,'../frontend/dist/index.html'))
+// })
+
+module.exports= { app }
