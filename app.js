@@ -16,7 +16,8 @@ app.use(cookie())
 // app.use(cors())
 app.use(cors({
      credentials: true,
-     origin: "http://localhost:5173", 
+    //  origin: "http://127.0.0.1:5173", 
+     origin: "https://my-store-e-commerce.vercel.app", 
     //  allowedHeaders: ["Content-Type", "Authorization", /* add other headers here */],
     }));
 app.use(bodyparser.urlencoded({extended:true}))
